@@ -1,0 +1,28 @@
+{
+  "name": "boxes",
+  "version": "0.1.0",
+  "description": "A minimal oocss/flexbox toolkit for designing in the browser.",
+  "style": "./css/boxes.css",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kkga/boxes.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-livereload": "~0.2.0",
+    "gulp-minify-css": "~0.2.0",
+    "tiny-lr": "0.0.5",
+    "gulp-util": "~2.2.12",
+    "gulp-watch": "~0.5.0",
+    "gulp-csslint": "~0.1.3",
+    "gulp-autoprefixer": "0.0.5",
+    "gulp-ruby-sass": "~0.3.1",
+    "ecstatic": "~0.4.13"
+  },
+  "author": {
+    "name": "@kkga_",
+    "email": "kkga@me.com",
+    "url": "http://kkga.me"
+  },
+  "license": "MIT"
+}

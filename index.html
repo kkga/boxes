@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BOXES &middot; A minimal oocss/flexbox toolkit for designing in the browser</title>
+  <meta name="author" content="Gadzhi Kharkharov">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/boxes.css">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+</head>
+<body class="column a-center j-start p2">
+
+  <header class="container--wide mb4">
+    <h1 class="h2 mb1 caps">Boxes</h1>
+    <h2 class="p regular">A minimal oocss/flexbox toolkit for designing in the browser.</h2>
+  </header>
+
+
+  <main class="container--wide">
+    <p>Youss probably don't need this thing, but here you go...</p>
+
+    <h1 class="mb3 mt4">Some Examples</h1>
+
+    <section class="row">
+
+      <section class="grow-1 mr2">
+        <h3 class="mb2">Media Object</h3>
+
+        <div class="row a-start p1">
+          <div class="p3 mr1"></div>
+          <div class="grow-1 p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum! Aut aspernatur veniam totam laboriosam earum voluptates debitis. Illum accusantium similique debitis!</div>
+        </div>
+
+        <pre class="mt1 p1 bg-silver">
+          <code>
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"row a-start p1"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"p3 mr1"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"grow-1 p1"</span>&gt;Lorem...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+          </code>
+        </pre>
+
+      </section>
+
+      <section class="grow-1 ml2">
+        <h3 class="mb2">Nested Media Object</h3>
+
+        <div class="row a-start p1">
+          <div class="p3 mr1"></div>
+          <div class="grow-1 p1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio, maiores, suscipit explicabo maxime sed ea atque et laborum illum dolores obcaecati at asperiores officia quo amet ad corporis mollitia.</p>
+
+            <section class="grow-1 mt2">
+              <div class="row a-start p1">
+                <div class="p2 mr1"></div>
+                <div class="grow-1 p1 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum!</div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
+
+</body>
+</html>

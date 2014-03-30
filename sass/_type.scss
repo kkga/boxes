@@ -1,0 +1,44 @@
+/* Type */
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+p, .p, h4, h5, h6, dl, ol, ul {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+small, .small {
+  font-size: .875rem;
+  line-height: 1.5rem;
+}
+
+
+/* Type Utilities */
+
+strong, .bold { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; letter-spacing: .15em; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+
+/* Leading utilities to control line-height */
+
+.leading-1 { line-height: 1.5rem; }
+.leading-2 { line-height: 2rem; }
+.leading-3 { line-height: 3rem; }
+.leading-4 { line-height: 4rem; }
