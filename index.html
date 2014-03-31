@@ -2,69 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>BOXES &middot; A minimal oocss/flexbox toolkit for designing in the browser</title>
+  <title>BOXES &middot; A minimal oocss/flexbox toolkit for sketching in the browser</title>
   <meta name="author" content="Gadzhi Kharkharov">
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/boxes.css">
+  <link rel="stylesheet" href="css/syntax.css">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
 </head>
-<body class="column a-center j-start p2">
+<body class="bg-navy white">
 
-  <header class="container--wide mb4">
-    <h1 class="h2 mb1 caps">Boxes</h1>
-    <h2 class="p regular">A minimal oocss/flexbox toolkit for designing in the browser.</h2>
+  <header class="p2 white">
+    <h1 class="h1 mb1 caps">Boxes</h1>
+    <h2 class="p regular navy-light">A minimal oocss/flexbox toolkit for sketching in the browser.</h2>
   </header>
 
 
-  <main class="container--wide">
-    <p>Youss probably don't need this thing, but here you go...</p>
+  <main>
 
-    <h1 class="mb3 mt4">Some Examples</h1>
+    <article>
+      <h2 class="h1 navy-light p2 bg-dark">Examples</h2>
 
-    <section class="row">
+      <section class="row col-desktop py2">
+        <section class="flex-1 p2">
+          <h3 class="mb2">Media Object</h3>
 
-      <section class="grow-1 mr2">
-        <h3 class="mb2">Media Object</h3>
-
-        <div class="row a-start p1">
-          <div class="p3 mr1"></div>
-          <div class="grow-1 p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum! Aut aspernatur veniam totam laboriosam earum voluptates debitis. Illum accusantium similique debitis!</div>
-        </div>
-
-        <pre class="mt1 p1 bg-silver">
-          <code>
-&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"row a-start p1"</span>&gt;
-  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"p3 mr1"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"grow-1 p1"</span>&gt;Lorem...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-          </code>
-        </pre>
-
-      </section>
-
-      <section class="grow-1 ml2">
-        <h3 class="mb2">Nested Media Object</h3>
-
-        <div class="row a-start p1">
-          <div class="p3 mr1"></div>
-          <div class="grow-1 p1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio, maiores, suscipit explicabo maxime sed ea atque et laborum illum dolores obcaecati at asperiores officia quo amet ad corporis mollitia.</p>
-
-            <section class="grow-1 mt2">
-              <div class="row a-start p1">
-                <div class="p2 mr1"></div>
-                <div class="grow-1 p1 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum!</div>
-              </div>
-            </section>
+          <div class="row a-start p1 Demo">
+            <div class="p3 mr1"></div>
+            <div class="flex-1 p1">
+              <p class="mb1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum!</p>
+              <p>Aut aspernatur veniam totam laboriosam earum voluptates debitis. Illum accusantium similique debitis!</p>
+            </div>
           </div>
+        </section>
 
-        </div>
+        <section class="flex-1 p2">
+          <h3 class="mb2">Code</h3>
+          <pre class="bg-dark">
+            <code class="html">
+
+            </code>
+          </pre>
+        </section>
       </section>
 
-    </section>
+      <section class="row col-desktop py2">
+        <section class="flex-1 p2">
+          <h3 class="mb2">Holy Grail Layout</h3>
+
+          <div class="row p1">
+            <div class="p3 mr1"></div>
+            <div class="flex-1 p1 mr1">
+              <p class="blokk mb1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsam amet necessitatibus minima quas beatae ab ut illum!</p>
+              <p class="blokk">Aut aspernatur veniam totam laboriosam earum voluptates debitis. Illum accusantium similique debitis!</p>
+            </div>
+            <div class="p3"></div>
+          </div>
+        </section>
+
+        <section class="flex-1 p2">
+          <h3 class="mb2">Code</h3>
+          <pre>
+            <code>
+
+<span class="undefined">            </span></code>
+          </pre>
+        </section>
+      </section>
+
+    </article>
 
   </main>
 

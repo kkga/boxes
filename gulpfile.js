@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
     csslint = require('gulp-csslint');
+    highlight = require('gulp-highlight');
 
 
 // Task to minify all css files in the css directory
@@ -53,6 +54,13 @@ gulp.task('pre-process', function(){
       }));
 });
 
+// Highlight syntax
+gulp.task('highlight', function () {
+    gulp.src('./index.html')
+        .pipe(highlight())
+        .pipe(gulp.dest('.'));
+});
+
 /*
    DEFAULT TASK
 
@@ -67,7 +75,7 @@ gulp.task('default', function(){
   gutil.log(gutil.colors.blue('HTTP server listening on port 8080'));
   server.listen(35729, function (err) {
     gulp.watch(['*.html', './sass/*.scss'], function(event) {
-      gulp.run('reload', 'pre-process');
+      gulp.run('reload', 'pre-process', 'highlight');
     });
   });
 });

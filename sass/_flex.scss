@@ -1,5 +1,8 @@
 /* Flexbox Utilities */
 
+
+// initialize flexbox
+
 .row {
   display: flex;
   flex-direction: row;
@@ -17,6 +20,23 @@
   flex-direction: column-reverse;
 }
 .inline-flex { display: inline-flex; }
+
+
+// responsive styles
+
+@media screen and (max-width: 48em) {
+  .row-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .col-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+// alignment of flex items
 
 .j-start { justify-content: flex-start; }
 .j-end { justify-content: flex-end; }
@@ -46,15 +66,10 @@
 .wrap { flex-wrap: wrap; }
 .wrap-rev { flex-wrap: wrap-reverse; }
 
-.grow-1 { flex-grow: 1; }
-.grow-2 { flex-grow: 2; }
-.grow-3 { flex-grow: 3; }
-.grow-4 { flex-grow: 4; }
-
-.shrink-1 { flex-shrink: 1; }
-.shrink-2 { flex-shrink: 2; }
-.shrink-3 { flex-shrink: 3; }
-.shrink-4 { flex-shrink: 4; }
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+.flex-4 { flex: 4; }
 
 .order-1 { order: 1; }
 .order-2 { order: 2; }
