@@ -18,7 +18,8 @@
     "gulp-autoprefixer": "0.0.5",
     "gulp-ruby-sass": "~0.3.1",
     "ecstatic": "~0.4.13",
-    "gulp-highlight": "0.0.3"
+    "gulp-highlight": "0.0.3",
+    "highlights": "~0.7.0"
   },
   "author": {
     "name": "@kkga_",

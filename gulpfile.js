@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
     csslint = require('gulp-csslint');
-    highlight = require('gulp-highlight');
+    highlights = require('highlights');
 
 
 // Task to minify all css files in the css directory
@@ -84,3 +84,12 @@ gulp.task('production', function(){
     gulp.run('minify-css');
 });
 
+
+gulp.task('highlight', function(){
+  highlighter = new highlights();
+  html = highlighter.highlightSync;
+    var fileContents = 'var hello = "world";';
+    var scopeName = 'source.js';
+
+  console.log(html);
+});

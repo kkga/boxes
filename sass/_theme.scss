@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Menlo, monospace, sans-serif;
   line-height: 1.3rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -7,14 +7,15 @@ body {
 }
 
 div {
-  background-color: rgba(63, 157, 255, 0.1);
-  border: 1px solid rgba(63, 157, 255, 0.1);
-  color: rgba(63, 157, 255, 1);
+  background-color: rgba(63, 157, 255, 0.25);
+  border: 1px solid rgba(63, 157, 255, 0.25);
+  color: #fff;
 }
 
-code {
-  font-family: "Source Code Pro", monospace;
-  font-size: 0.75rem;
+pre {
+  font-family: Menlo, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 
@@ -23,22 +24,26 @@ code {
   color: lighten(rgb(0,31,63), 50%);
 }
 
+.bg-navy-light {
+  // background-color: lighten(rgb(0,31,63), 85%);
+  background-image: linear-gradient(to bottom, lighten(rgb(0,31,63), 85%), #fff)
+}
+
 .bg-dark {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.025);
 }
 
 .Demo {
   p {
-    font-size: 1rem;
-    opacity: 0.5;
+    font-size: 0.875rem;
+    line-height: 1.4;
   }
 }
 
 article {
-  background-color:rgb(0,31,63);
-  border-top: 1px solid lighten(rgb(0,31,63), 5%);
+  border-top: 1px solid lighten(rgb(0,31,63), 80%);
 
   > section {
-    border-bottom: 1px solid lighten(rgb(0,31,63), 5%);
+    border-bottom: 1px solid lighten(rgb(0,31,63), 80%);
   }
 }
